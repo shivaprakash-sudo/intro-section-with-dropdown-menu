@@ -20,12 +20,39 @@
   align-items: center;
 }
 
+.display-none {
+  display: none;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.9rem;
+  -webkit-border-radius: 0.9rem;
+  -moz-border-radius: 0.9rem;
+  -ms-border-radius: 0.9rem;
+  -o-border-radius: 0.9rem;
+}
+
 .container {
-  width: 95%;
+  width: 93%;
   max-width: 81rem;
   margin-inline: auto;
 }
 
 .active {
   display: block;
+}
+
+.active-animation {
+  animation: spin 300ms timing-function delay iteration-count direction
+    fill-mode;
+  -webkit-animation: spin 300ms timing-function delay iteration-count direction
+    fill-mode;
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    rotate: 180deg;
+  }
 }

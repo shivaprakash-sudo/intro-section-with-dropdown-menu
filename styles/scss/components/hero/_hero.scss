@@ -1,1 +1,31 @@
 @use "../../base" as *;
+
+.hero {
+  text-align: center;
+  h1 {
+    margin-block-start: 1rem;
+    font-size: clamp($fs-heading-sm, 8vw, $fs-heading-lg);
+  }
+  p {
+    line-height: 1.6;
+    color: $clr-neutral-200;
+  }
+  .btn-hero {
+    background: $clr-neutral-300;
+    color: $clr-neutral-100;
+    margin-inline: auto;
+  }
+
+  .hero__icons {
+    margin-block: 2rem;
+    justify-content: space-between;
+    #databiz,
+    #client-meet,
+    #client-maker {
+      width: 4rem;
+    }
+    #audiophile {
+      width: 2.5rem;
+    }
+  }
+}

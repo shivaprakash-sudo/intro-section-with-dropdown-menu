@@ -12,7 +12,7 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 
-<body>
+<body class="flex col gap-1">
 
   <header class="container flex items-center">
     <a href="/index.html" id="logo">
@@ -20,14 +20,14 @@
     </a>
     <nav>
       <div class="open-menu"><img src="./images/icon-menu.svg" alt="" aria-hidden="true"></div>
-      <div class="nav-items flex col gap-2">
+      <div class="nav-items flex col gap-2 display-none">
         <div class="close-menu"><img src="./images/icon-close-menu.svg" alt="" aria-hidden="true"></div>
         <div class="dropdown-container flex col gap-2">
           <a href="#" class="flex items-center gap-1">
             <p>Features</p>
             <img src="./images/icon-arrow-down.svg" alt="" aria-hidden="true">
           </a>
-          <ul class="dropdown flex col gap-2">
+          <ul class="dropdown flex col gap-2 display-none">
             <li class="dropdown__item flex items-center gap-1">
               <img src="./images/icon-todo.svg" alt="" aria-hidden="true">
               <a href="#">Todo List</a>
@@ -51,7 +51,7 @@
             <p>Company</p>
             <img src="./images/icon-arrow-down.svg" alt="" aria-hidden="true">
           </a>
-          <ul class="dropdown flex col gap-2">
+          <ul class="dropdown flex col gap-2 display-none">
             <li><a href="#">History</a></li>
             <li><a href="#">Our Team</a></li>
             <li><a href="#">Blog</a></li>
@@ -67,12 +67,12 @@
     </nav>
   </header>
 
-  <main>
+  <main class="flex col gap-1">
     <section class="hero-imgs">
-      <img class="hero__imgs-mobile" src="./images/image-hero-mobile.png" alt="Person holding laptop">
-      <img class="hero__imgs-desktop" src="./images/image-hero-desktop.png" alt="Person holding laptop">
+      <img class="hero-imgs-mobile" src="./images/image-hero-mobile.png" alt="Person holding laptop">
+      <img class="hero-imgs-desktop display-none" src="./images/image-hero-desktop.png" alt="Person holding laptop">
     </section>
-    <section class="hero container">
+    <section class="hero container flex col gap-1">
       <h1>Make remote work</h1>
       <p>
         Get your team in sync, no matter your location. Streamline processes,
@@ -80,10 +80,10 @@
       </p>
       <a class="btn btn-hero" href="#">Learn more</a>
       <div class="hero__icons flex items-center">
-        <img src="./images/client-databiz.svg" alt="" aria-hidden="true">
-        <img src="./images/client-audiophile.svg" alt="" aria-hidden="true">
-        <img src="./images/client-meet.svg" alt="" aria-hidden="true">
-        <img src="./images/client-maker.svg" alt="" aria-hidden="true">
+        <img id="databiz" src="./images/client-databiz.svg" alt="" aria-hidden="true">
+        <img id="audiophile" src="./images/client-audiophile.svg" alt="" aria-hidden="true">
+        <img id="client-meet" src="./images/client-meet.svg" alt="" aria-hidden="true">
+        <img id="client-maker" src="./images/client-maker.svg" alt="" aria-hidden="true">
       </div>
     </section>
   </main>
