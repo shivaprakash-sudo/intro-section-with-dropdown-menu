@@ -1,6 +1,9 @@
 @use "../../base" as *;
 
 nav {
+  a:hover {
+    color: $clr-neutral-300;
+  }
   .nav-items {
     position: absolute;
     right: 0;
@@ -13,6 +16,15 @@ nav {
     box-shadow: 0 0 50rem $clr-neutral-300;
     .close-menu {
       align-self: flex-end;
+    }
+
+    .btn-register {
+      border: 1px solid $clr-neutral-200;
+      color: $clr-neutral-200;
+      &:hover {
+        border: 1px solid $clr-neutral-300;
+        color: $clr-neutral-300;
+      }
     }
   }
 
