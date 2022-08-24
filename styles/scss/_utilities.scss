@@ -1,0 +1,31 @@
+@use "./base" as *;
+
+.flex {
+  display: flex;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 1.5rem;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 81rem;
+  margin-inline: auto;
+}
+
+.active {
+  display: block;
+}

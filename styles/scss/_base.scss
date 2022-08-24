@@ -1,0 +1,54 @@
+// google font
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+// VARIABLES
+// neutral colours
+$clr-neutral-100: hsl(0, 0%, 98%);
+$clr-neutral-200: hsl(0, 0%, 41%);
+$clr-neutral-300: hsl(0, 0%, 8%);
+
+// typography
+$fs-base: 1rem;
+$fs-small: calc($fs-base * 0.9);
+$fs-heading-sm: 1.5rem;
+$fs-heading-lg: 2.5rem;
+$ff-primary: "Epilogue", sans-serif;
+$fw-500: 500;
+$fw-700: 700;
+
+*,
+::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $clr-neutral-200;
+}
+
+body {
+  font-size: $fs-small;
+  font-family: $ff-primary;
+  background-color: $clr-neutral-100;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
