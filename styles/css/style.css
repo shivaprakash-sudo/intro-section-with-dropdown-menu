@@ -48,37 +48,40 @@ header {
   padding-block: 1.3rem;
 }
 
-.hero {
+main .hero-imgs .hero-imgs-desktop {
+  display: none;
+}
+main .hero {
   text-align: center;
 }
-.hero h1 {
+main .hero h1 {
   margin-block-start: 1rem;
   font-size: clamp(2rem, 8vw, 3.5rem);
 }
-.hero p {
+main .hero p {
   line-height: 1.6;
   color: hsl(0deg, 0%, 41%);
 }
-.hero .btn-hero {
+main .hero .btn-hero {
   background: hsl(0deg, 0%, 8%);
   color: hsl(0deg, 0%, 98%);
   border: 1px solid hsl(0deg, 0%, 8%);
   margin-inline: auto;
 }
-.hero .btn-hero:hover {
+main .hero .btn-hero:hover {
   background: transparent;
   color: hsl(0deg, 0%, 8%);
 }
-.hero .hero__icons {
+main .hero .hero__icons {
   margin-block: 2rem;
   justify-content: space-between;
 }
-.hero .hero__icons #databiz,
-.hero .hero__icons #client-meet,
-.hero .hero__icons #client-maker {
+main .hero .hero__icons #databiz,
+main .hero .hero__icons #client-meet,
+main .hero .hero__icons #client-maker {
   width: 4rem;
 }
-.hero .hero__icons #audiophile {
+main .hero .hero__icons #audiophile {
   width: 2.5rem;
 }
 
@@ -140,6 +143,10 @@ nav .close-menu {
   display: none;
 }
 
+.active {
+  display: flex;
+}
+
 .btn {
   padding: 0.75rem 1.5rem;
   border-radius: 0.9rem;
@@ -155,18 +162,25 @@ nav .close-menu {
   margin-inline: auto;
 }
 
-.active {
-  display: block;
-}
-
-.active-animation {
-  animation: spin 300ms timing-function delay iteration-count direction fill-mode;
-  -webkit-animation: spin 300ms timing-function delay iteration-count direction fill-mode;
-}
-
-@keyframes spin {
-  0%, 100% {
-    rotate: 180deg;
+@media (min-width: 730px) {
+  nav .open-menu {
+    display: none;
+  }
+  nav .nav-items {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    padding-inline: 10rem;
+    max-height: 90vh;
+  }
+  main .hero-imgs .hero-imgs-mobile {
+    display: none;
+  }
+  main .hero-imgs .hero-imgs-desktop {
+    display: block;
   }
 }
 
