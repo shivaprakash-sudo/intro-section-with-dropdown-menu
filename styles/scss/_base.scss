@@ -50,6 +50,12 @@ body {
   font-family: $ff-primary;
   background-color: $clr-neutral-100;
   line-height: $lh-base;
+  header {
+    #logo {
+      padding-block: 1rem;
+      align-self: flex-start;
+    }
+  }
 }
 
 .attribution {

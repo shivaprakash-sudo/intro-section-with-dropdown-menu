@@ -1,13 +1,50 @@
-@use "base";
+@use "base" as *;
 
 @media (min-width: 730px) {
   nav {
-    .open-menu {
+    width: 100%;
+    margin-inline-start: 2rem;
+
+    .open-menu,
+    .close-menu {
       display: none;
     }
 
-    .nav-items {
-      display: none;
+    .links {
+      justify-content: space-between;
+
+      .nav-items {
+        width: 100%;
+        gap: 2rem;
+        position: inherit;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        background-color: none;
+        box-shadow: none;
+
+        .dropdown-container {
+          position: relative;
+
+          .dropdown {
+            position: absolute;
+            top: 2rem;
+            right: 0.05rem;
+            padding: 1rem 2rem;
+            background-color: $clr-neutral-100;
+            box-shadow: 0.2rem 0.2rem 1rem -0.3rem $clr-neutral-300;
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .btns {
+      flex-direction: row;
     }
   }
 
