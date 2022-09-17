@@ -201,6 +201,7 @@ nav .close-menu {
     display: flex;
   }
   nav .nav-items .dropdown-container .dropdown {
+    width: max-content;
     position: absolute;
     top: 1.3rem;
     right: 0.05rem;
@@ -212,9 +213,6 @@ nav .close-menu {
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
-  }
-  nav .nav-items .dropdown-container .dropdown__item {
-    flex-basis: 100%;
   }
   nav .btns {
     flex-direction: row;

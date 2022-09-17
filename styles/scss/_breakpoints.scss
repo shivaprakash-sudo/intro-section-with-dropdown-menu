@@ -38,6 +38,7 @@
         }
 
         .dropdown {
+          width: max-content;
           position: absolute;
           top: 1.3rem;
           right: 0.05rem;
@@ -49,10 +50,6 @@
           -moz-border-radius: 0.5rem;
           -ms-border-radius: 0.5rem;
           -o-border-radius: 0.5rem;
-
-          &__item {
-            flex-basis: 100%;
-          }
         }
       }
     }
