@@ -113,12 +113,17 @@ nav .nav-items {
 nav .nav-items .close-menu {
   align-self: flex-end;
 }
-nav .btn-register {
-  border: 1px solid hsl(0deg, 0%, 41%);
+nav .nav-items .btns {
+  width: 100%;
+  align-self: center;
+  justify-content: center;
+}
+nav .nav-items .btns .btn-register {
+  border: 2px solid hsl(0deg, 0%, 41%);
   color: hsl(0deg, 0%, 41%);
 }
-nav .btn-register:hover {
-  border: 1px solid hsl(0deg, 0%, 8%);
+nav .nav-items .btns .btn-register:hover {
+  border: 2px solid hsl(0deg, 0%, 8%);
   color: hsl(0deg, 0%, 8%);
 }
 nav .open-menu,
@@ -155,7 +160,8 @@ nav .close-menu {
 }
 
 .btn {
-  padding: 0.75rem 1.5rem;
+  text-align: center;
+  padding: 0.65rem 1.5rem;
   border-radius: 0.9rem;
   -webkit-border-radius: 0.9rem;
   -moz-border-radius: 0.9rem;
@@ -165,14 +171,19 @@ nav .close-menu {
 
 .container {
   width: 93%;
-  max-width: 81rem;
   margin-inline: auto;
 }
 
 @media (min-width: 730px) {
+  header {
+    align-items: center;
+  }
+  header #logo {
+    margin-block-start: 0.7rem;
+  }
   nav {
     width: 100%;
-    margin-inline-start: 2rem;
+    margin-inline-start: 5rem;
   }
   nav .open-menu,
 nav .close-menu {
@@ -180,6 +191,7 @@ nav .close-menu {
   }
   nav .nav-items {
     justify-content: space-between;
+    align-items: center;
     padding: 0;
     width: 100%;
     gap: 2rem;
@@ -194,18 +206,18 @@ nav .close-menu {
     flex-direction: row;
     gap: 3rem;
   }
-  nav .nav-items .dropdown-container {
+  nav .nav-items .links .dropdown-container {
     position: relative;
   }
-  nav .nav-items .dropdown-container:hover .dropdown {
+  nav .nav-items .links .dropdown-container:hover .dropdown {
     display: flex;
   }
-  nav .nav-items .dropdown-container .dropdown {
+  nav .nav-items .links .dropdown-container .dropdown {
     width: max-content;
     position: absolute;
-    top: 1.3rem;
-    right: 0.05rem;
-    padding: 1rem 2rem;
+    top: 2rem;
+    right: 0;
+    padding: 1rem 1.5rem;
     background-color: hsl(0deg, 0%, 98%);
     box-shadow: 0.2rem 0.2rem 1rem -0.3rem hsl(0deg, 0%, 8%);
     border-radius: 0.5rem;
@@ -213,6 +225,10 @@ nav .close-menu {
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
+  }
+  nav .nav-items .btns {
+    width: max-content;
+    gap: 1rem;
   }
   nav .btns {
     flex-direction: row;
